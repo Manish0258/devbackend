@@ -31,7 +31,7 @@ const connectionRequestSchema = new mongoose.Schema({
 
 //ConnectionRequest.find({fromUserId:234423545432},toUserId:23423451)
 //Adding index will make query faster and this is example of compond indexing
-connectionRequestSchema.index({fromUserId : 1, toUserId:1});
+connectionRequestSchema.index({fromUserId : 1, toUserId:1});//means in ascending order ...-1 for descending
 
 
 // This function is called before saving the data into this database model

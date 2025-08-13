@@ -16,8 +16,9 @@ const userSchema= new mongoose.Schema({
     email:{
         type:String,
         required:true,
-        unique:true,
+        unique:true,// for unique is true mongodb automatically creates a indexing for that
         lowercase:true,
+        //index:true can also be wrritten for indexing
         trim:true,
         validate(value){
             if(!validator.isEmail(value)){
