@@ -20,6 +20,8 @@ const {userAuth}=require("./middlewares/userAuth");
 
 const cors=require("cors");
 
+require("dotenv").config();
+
 
 const authRouter=require("./routes/auth");
 

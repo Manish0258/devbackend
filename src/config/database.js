@@ -2,7 +2,7 @@ const mongoose=require("mongoose");
 
 const connectDB= async() =>{
     await mongoose.connect(
-   "mongodb+srv://manishjs:test123@cluster0.wwotlbz.mongodb.net/devTinder"
+   process.env.DB_CONNECTION
 );
 }
 
